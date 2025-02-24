@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.favoritos {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 7px 14px;
+}
+
+.favoritos:hover {
+  background-color: rgb(77, 77, 117);
+  color: white;
+  transition: 0.3s;
+}
