@@ -1,9 +1,9 @@
 import React from "react";
-import { /*useState,*/ useEffect } from "react";
+import { useState, useEffect } from "react";
 import api from "../../services/api";
 
 export default function Home() {
-  //const [filmes, setFilmes] = useState([]);
+  const [filmes, setFilmes] = useState([]);
 
   useEffect(() => {
     async function loadFilmes() {
