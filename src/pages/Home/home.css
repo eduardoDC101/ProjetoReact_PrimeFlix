@@ -1,7 +1,12 @@
 .lista-filmes {
-  max-width: 800px;
-  margin: 14px auto;
+  width: 90%;
+  margin: 30px auto;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .loading {
@@ -13,44 +18,40 @@
 }
 
 .lista-filmes article {
-  width: 100%;
-  background-color: #0000006f;
+  width: 22%;
   padding: 15px;
   border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-.lista-filmes strong {
-  margin-bottom: 14px;
-  text-align: center;
-  font-size: 22px;
-  display: block;
+  margin: 0 10px 20px 15px;
 }
 
 .lista-filmes img {
-  width: 80%;
-  max-width: 80%;
-  max-height: 340px;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
   display: block;
-  margin: 0 auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-radius: 8px;
+}
+
+.lista-filmes img:hover {
+  scale: 1.15;
 }
 
 .lista-filmes a {
-  display: flex;
-  width: 80%;
-  align-items: center;
-  justify-content: center;
   padding: 10px 0;
-  font-size: 24px;
-  margin: 0 auto;
-  background-color: #116feb;
   text-decoration: none;
-  color: white;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
 }
 
-/*console - redes - 4g lenta*/
+@media (max-width: 945px) {
+  .lista-filmes article {
+    width: 30%;
+  }
+}
+@media (max-width: 850px) {
+  .lista-filmes article {
+    width: 45%;
+  }
+}
+@media (max-width: 575px) {
+  .lista-filmes article {
+    width: 100%;
+  }
+}

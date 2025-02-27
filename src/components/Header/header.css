@@ -30,3 +30,9 @@ header {
   color: white;
   transition: 0.3s;
 }
+
+@media (max-width: 390px) {
+  .logo {
+    font-size: 20px;
+  }
+}
