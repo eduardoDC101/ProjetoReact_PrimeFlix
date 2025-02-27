@@ -1,13 +1,15 @@
 .lista-filmes {
   max-width: 800px;
   margin: 14px auto;
+  color: white;
 }
 
 .lista-filmes article {
   width: 100%;
-  background-color: #fff;
+  background-color: #0000006f;
   padding: 15px;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .lista-filmes strong {
@@ -18,21 +20,24 @@
 }
 
 .lista-filmes img {
-  width: 900px;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   max-height: 340px;
   object-fit: cover;
   display: block;
+  margin: 0 auto;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .lista-filmes a {
   display: flex;
+  width: 80%;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
   font-size: 24px;
+  margin: 0 auto;
   background-color: #116feb;
   text-decoration: none;
   color: white;
