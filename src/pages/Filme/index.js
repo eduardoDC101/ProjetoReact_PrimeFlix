@@ -41,6 +41,12 @@ export default function Filme() {
     );
   }
 
+  const getCorNote = (nota) => {
+    if (nota <= 4) return "red";
+    if (nota > 4 && nota <= 7) return "orange";
+    return "green";
+  };
+
   return (
     <div className="filme-info">
       <h1>{filme.title}</h1>
@@ -50,13 +56,15 @@ export default function Filme() {
       />
       <h3>Sinopse</h3>
       <span>{filme.overview}</span>
-      <strong>Avalição: {filme.vote_average} /10</strong>
+      <strong style={{ color: getCorNote(filme.vote_average) }}>
+        Avalição: {filme.vote_average} /10
+      </strong>
 
       <div className="area-buttons">
         <button>Salvar</button>
-        <button>
-          <a href=".">Trailer</a>
-        </button>
+        <a href=".">
+          <button>Trailer</button>
+        </a>
       </div>
     </div>
   );

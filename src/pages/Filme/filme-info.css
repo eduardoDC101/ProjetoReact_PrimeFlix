@@ -5,10 +5,17 @@
   flex-direction: column;
   max-width: 800px;
   padding: 0 8px 20px 0;
+  color: rgb(245, 245, 245);
 }
 
 .filme-info h1 {
   margin: 14px 0;
+  font-style: italic;
+  background-color: #18447e;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
 }
 
 .filme-info img {
@@ -24,12 +31,12 @@
 }
 
 .filme-info span {
-  margin: 8px 0;
+  margin: 18px 0;
 }
 
 .area-buttons button {
   margin-right: 12px;
-  margin-top: 14px;
+  margin-top: 24px;
   margin-left: 0;
   font-size: 20px;
   border: 0;
@@ -41,16 +48,11 @@
 }
 
 .area-buttons button:hover {
-  background-color: blue;
+  background-color: #18447e;
   color: white;
 }
 
 .area-buttons a {
   text-decoration: none;
-  color: black;
-  transition: all 0.5s;
-}
-
-.area-buttons a:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
