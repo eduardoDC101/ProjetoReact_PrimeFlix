@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 
 import api from "../../services/api";
 
+import "./filme-info.css";
+
 export default function Filme() {
   const { id } = useParams();
   const [filme, setFilme] = useState({});
@@ -18,6 +20,7 @@ export default function Filme() {
           },
         })
         .then((response) => {
+          console.log(response.data);
           setFilme(response.data);
           setLoading(false);
         })
@@ -42,13 +45,19 @@ export default function Filme() {
     <div className="filme-info">
       <h1>{filme.title}</h1>
       <img
-        src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`}
+        src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`}
         alt={filme.title}
       />
       <h3>Sinopse</h3>
       <span>{filme.overview}</span>
-
       <strong>Avalição: {filme.vote_average} /10</strong>
+
+      <div className="area-buttons">
+        <button>Salvar</button>
+        <button>
+          <a href=".">Trailer</a>
+        </button>
+      </div>
     </div>
   );
 }
