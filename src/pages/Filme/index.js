@@ -35,6 +35,25 @@ export default function Filme() {
     loadFilme();
   }, [navigate, id]);
 
+  function SalvarFilme() {
+    const minhaLista = localStorage.getItem("@primeflix");
+
+    let filmesSalvos = JSON.parse(minhaLista) || [];
+
+    const hasfilme = filmesSalvos.some(
+      (filmesSalvo) => filmesSalvo.id === filme.id
+    );
+
+    if (hasfilme) {
+      alert("Esse filme já está na lista!");
+      return;
+    }
+
+    filmesSalvos.push(filme);
+    localStorage.setItem("@primeflix", JSON.stringify(filmesSalvos));
+    alert("Filme salvo com sucesso!");
+  }
+
   if (loading) {
     return (
       <div className="filme-info">
@@ -63,7 +82,7 @@ export default function Filme() {
       </strong>
 
       <div className="area-buttons">
-        <button>Salvar</button>
+        <button onClick={SalvarFilme}>Salvar</button>
         <a
           target="_blank"
           rel="noreferrer"
