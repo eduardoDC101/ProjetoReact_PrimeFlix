@@ -44,6 +44,9 @@
   .lista-filmes article {
     width: 30%;
   }
+  .lista-filmes img:hover {
+    scale: 1;
+  }
 }
 @media (max-width: 850px) {
   .lista-filmes article {

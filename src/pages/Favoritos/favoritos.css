@@ -61,3 +61,15 @@
 .meus-filmes div button.excluir:hover {
   background-color: rgb(163, 54, 54);
 }
+
+@media (max-width: 950px) {
+  .meus-filmes ul {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .meus-filmes ul {
+    width: 90%;
+  }
+}
