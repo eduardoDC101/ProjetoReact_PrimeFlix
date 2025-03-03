@@ -11,7 +11,7 @@ Utilizaremos conceitos avançados de React, como Rotas com react-router-dom e ho
 - React
 - React Router Dom
 - Hooks (useState, useEffect, etc.)
-- API de filmes (ex: The Movie Database API)
+- API de filmes (The Movie Database API)
 
 ## Como Rodar o Projeto
 
